@@ -95,6 +95,190 @@
     background: linear-gradient(135deg, #8b5cf6, #7c3aed);
     box-shadow: 0 4px 20px rgba(139, 92, 246, 0.4);
   }
+  .btn-fbt {
+    background: linear-gradient(135deg, #06b6d4, #0891b2);
+    box-shadow: 0 4px 20px rgba(6, 182, 212, 0.4);
+  }
+
+  .btn .badge {
+    position: absolute;
+    top: 10px;
+    right: 14px;
+    font-size: 0.65rem;
+    font-weight: 600;
+    background: rgba(255,255,255,0.25);
+    padding: 2px 8px;
+    border-radius: 20px;
+    letter-spacing: 0.03em;
+  }
+
+  footer {
+    margin-top: 28px;
+    text-align: center;
+    color: #475569;
+    font-size: 0.75rem;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>⚡ 安衛巡檢表單</h1>
+  <p>點擊按鈕前往對應樓層的 Google 表單</p>
+</header>
+
+<div class="btn-grid">
+
+  <a class="btn btn-b1f"
+     href="https://docs.google.com/forms/d/e/1FAIpQLSe43nO_Nm0ZUk7_SNMjnHCwtDTMw156Wn5Q3CycLThtOizbNg/viewform"
+     target="_blank" rel="noopener">
+    <span class="icon">🔌</span>
+    B1F 電氣棟
+    <span class="badge">Google 表單</span>
+  </a>
+
+  <a class="btn btn-1f-equip"
+     href="https://docs.google.com/forms/d/e/1FAIpQLSfYs-t-HroqrTH0R6NTR3JOmNcccji0RVLVN4l7xisuyWCLsQ/viewform"
+     target="_blank" rel="noopener">
+    <span class="icon">🏭</span>
+    1F 設備棟
+    <span class="badge">Google 表單</span>
+  </a>
+
+  <a class="btn btn-1f-elec"
+     href="https://docs.google.com/forms/d/e/1FAIpQLSdHm44i0ZEevIlzmRYMor_aSpMtmRB16AswHK67FMn_ro_MlQ/viewform"
+     target="_blank" rel="noopener">
+    <span class="icon">⚡</span>
+    1F 電氣棟
+    <span class="badge">Google 表單</span>
+  </a>
+
+  <a class="btn btn-2f"
+     href="https://docs.google.com/forms/d/e/1FAIpQLScnyUlje8dwMmJDe_U2d9qGtoRVJ73XnqHLQXwq1niwFfN71w/viewform"
+     target="_blank" rel="noopener">
+    <span class="icon">🔧</span>
+    2F 電氣棟
+    <span class="badge">Google 表單</span>
+  </a>
+
+  <a class="btn btn-3f"
+     href="https://docs.google.com/forms/d/e/1FAIpQLScIDP5qSRWBh-UyMmPJjP4rm6wx-TRYEhjbCW7htISzXKnAaw/viewform"
+     target="_blank" rel="noopener">
+    <span class="icon">🏗️</span>
+    3F 電氣棟
+    <span class="badge">Google 表單</span>
+  </a>
+
+  <a class="btn btn-fbt"
+     href="https://docs.google.com/forms/d/e/1FAIpQLSenMebPLY_k77iMWgwoKE-MXITsVu9wCylPkByfscFW00sYkQ/viewform"
+     target="_blank" rel="noopener">
+    <span class="icon">🧭</span>
+    FBT西側
+    <span class="badge">Google 表單</span>
+  </a>
+
+</div>
+
+<footer>營造安衛巡檢系統</footer>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>安衛巡檢表單</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Microsoft JhengHei", "Noto Sans TC", sans-serif;
+    background: #0f172a;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 16px 40px;
+  }
+
+  header {
+    text-align: center;
+    margin-bottom: 24px;
+    padding-top: 12px;
+  }
+
+  header h1 {
+    color: #f1f5f9;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+  }
+
+  header p {
+    color: #94a3b8;
+    font-size: 0.85rem;
+    margin-top: 6px;
+  }
+
+  .btn-grid {
+    width: 100%;
+    max-width: 420px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex: 1;
+    justify-content: center;
+  }
+
+  .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+    padding: 28px 20px;
+    border: none;
+    border-radius: 16px;
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .btn:active {
+    transform: scale(0.96);
+  }
+
+  .btn .icon {
+    font-size: 1.6rem;
+    flex-shrink: 0;
+  }
+
+  .btn-b1f {
+    background: linear-gradient(135deg, #6366f1, #4f46e5);
+    box-shadow: 0 4px 20px rgba(99, 102, 241, 0.4);
+  }
+  .btn-1f-equip {
+    background: linear-gradient(135deg, #14b8a6, #0d9488);
+    box-shadow: 0 4px 20px rgba(20, 184, 166, 0.4);
+  }
+  .btn-1f-elec {
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+    box-shadow: 0 4px 20px rgba(245, 158, 11, 0.4);
+  }
+  .btn-2f {
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+    box-shadow: 0 4px 20px rgba(239, 68, 68, 0.4);
+  }
+  .btn-3f {
+    background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+    box-shadow: 0 4px 20px rgba(139, 92, 246, 0.4);
+  }
 
   .btn .badge {
     position: absolute;
